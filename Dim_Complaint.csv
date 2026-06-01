@@ -1,0 +1,31 @@
+ComplaintType,RiskLevel,ExpectedResolutionDays
+Pothole on Road,High,14
+Garbage Not Collected,Medium,3
+Water Supply Disruption,Critical,2
+Sewage Overflow,Critical,3
+Power Outage,High,1
+Streetlight Not Working,Medium,5
+Illegal Construction,High,21
+Encroachment of Public Land,High,30
+Noise Pollution,Low,7
+Stray Animal Menace,Medium,5
+Mosquito Breeding,High,3
+Food Adulteration,Critical,7
+Bus Route Irregularity,Low,10
+Ration Card Issue,Medium,7
+Property Tax Dispute,Medium,30
+Drainage Blockage,High,5
+Transformer Fault,High,2
+Road Cave-in,Critical,7
+Water Pipeline Leakage,High,3
+Deforestation Complaint,High,20
+Crop Damage Compensation,High,20
+School Infrastructure Issue,Medium,15
+Vehicle Registration Delay,Low,10
+Labour Wage Dispute,High,21
+Industrial Pollution,Critical,25
+Borewell Water Contamination,Critical,5
+Footpath Encroachment,Medium,10
+Hospital Staff Misconduct,High,7
+Rural Road Damage,High,14
+Electricity Meter Tampering,High,5
