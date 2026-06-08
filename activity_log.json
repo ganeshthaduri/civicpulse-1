@@ -1937,5 +1937,1216 @@
     "role": "user",
     "action": "PAGE_VIEW",
     "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-02 13:46:52",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-02 13:46:53",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-02 13:46:59",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-02 15:30:17",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-02 15:30:19",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-02 15:30:26",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=subscribe"
+  },
+  {
+    "timestamp": "2026-06-02 15:30:32",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-02 15:30:53",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-02 15:31:23",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-02 15:31:57",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-02 15:32:37",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-02 15:33:57",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-02 15:34:11",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-02 15:39:03",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-02 15:40:29",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-02 15:40:31",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-02 15:40:35",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-02 15:45:29",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-02 15:47:23",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 12:00:49",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN_FAILED",
+    "detail": "Failed login attempt for 'user3'"
+  },
+  {
+    "timestamp": "2026-06-03 12:01:02",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-03 12:01:04",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-03 12:01:13",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=subscribe"
+  },
+  {
+    "timestamp": "2026-06-03 12:01:16",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 12:01:40",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-03 12:03:34",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 12:03:37",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-03 12:05:42",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 12:07:05",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-03 12:08:39",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 12:08:43",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-03 12:09:10",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-03 12:09:15",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-03 13:13:24",
+    "username": "admin",
+    "role": "admin",
+    "action": "LOGIN",
+    "detail": "Successful login from role=admin"
+  },
+  {
+    "timestamp": "2026-06-03 13:28:22",
+    "username": "admin",
+    "role": "admin",
+    "action": "LOGIN",
+    "detail": "Successful login from role=admin"
+  },
+  {
+    "timestamp": "2026-06-03 13:40:30",
+    "username": "admin",
+    "role": "admin",
+    "action": "LOGOUT",
+    "detail": "User signed out"
+  },
+  {
+    "timestamp": "2026-06-03 13:40:54",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-03 13:40:56",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-03 13:43:15",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=subscribe"
+  },
+  {
+    "timestamp": "2026-06-03 13:43:26",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 13:45:50",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-03 13:45:55",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-03 13:46:35",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 13:46:38",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-03 13:51:20",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-03 13:52:09",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 13:52:17",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-03 13:56:29",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-03 13:57:54",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 14:00:43",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-03 14:05:51",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-03 14:06:25",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 14:32:06",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-03 21:55:30",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-03 21:55:32",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-03 21:55:38",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 22:12:05",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-03 22:19:05",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-03 22:26:30",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-03 22:26:37",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-05 16:46:03",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-05 16:46:05",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-05 16:46:09",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-06 11:08:10",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-06 11:08:12",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-06 11:08:19",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-06 11:13:57",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Greater Hyderabad']"
+  },
+  {
+    "timestamp": "2026-06-06 11:16:46",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=subscribe"
+  },
+  {
+    "timestamp": "2026-06-06 11:16:50",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-06 13:25:09",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-06 13:25:10",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-06 13:25:15",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-06 13:25:56",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['HMDA']"
+  },
+  {
+    "timestamp": "2026-06-07 09:29:28",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 09:29:30",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 09:29:42",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=subscribe"
+  },
+  {
+    "timestamp": "2026-06-07 09:29:48",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 09:30:15",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=sla"
+  },
+  {
+    "timestamp": "2026-06-07 09:30:35",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=nlp"
+  },
+  {
+    "timestamp": "2026-06-07 09:30:55",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-07 09:32:48",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 09:33:06",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District']"
+  },
+  {
+    "timestamp": "2026-06-07 09:34:08",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['Education Department']"
+  },
+  {
+    "timestamp": "2026-06-07 09:36:43",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
+  },
+  {
+    "timestamp": "2026-06-07 09:41:33",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=about"
+  },
+  {
+    "timestamp": "2026-06-07 09:42:09",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-07 11:17:18",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 11:17:20",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 11:17:38",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 11:17:51",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 11:18:18",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['HMWS&SB']"
+  },
+  {
+    "timestamp": "2026-06-07 11:18:32",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']; agencies=['HMWS&SB']"
+  },
+  {
+    "timestamp": "2026-06-07 11:39:09",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 11:39:11",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 11:40:25",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']"
+  },
+  {
+    "timestamp": "2026-06-07 11:40:41",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 11:41:21",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 11:41:26",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['TSRTC', 'Transport Department']"
+  },
+  {
+    "timestamp": "2026-06-07 11:41:34",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['Transport Department']"
+  },
+  {
+    "timestamp": "2026-06-07 11:41:43",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['Transport Department', 'GHMC']"
+  },
+  {
+    "timestamp": "2026-06-07 11:41:45",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['GHMC']"
+  },
+  {
+    "timestamp": "2026-06-07 11:42:10",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 11:56:47",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 11:56:49",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 11:56:58",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 11:57:24",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
+  },
+  {
+    "timestamp": "2026-06-07 12:04:27",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 12:04:29",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 12:04:47",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 12:04:53",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 12:05:43",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
+  },
+  {
+    "timestamp": "2026-06-07 12:06:38",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:07:22",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:08:22",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:08:45",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-07 12:20:27",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 12:21:14",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-07 12:22:40",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=about"
+  },
+  {
+    "timestamp": "2026-06-07 12:23:04",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
+  },
+  {
+    "timestamp": "2026-06-07 12:23:07",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 12:24:02",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=about"
+  },
+  {
+    "timestamp": "2026-06-07 12:24:05",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-07 12:27:14",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:27:23",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 12:27:36",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 12:28:36",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Greater Hyderabad']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:29:10",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:29:41",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:30:59",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District', 'Karimnagar District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:31:18",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:31:50",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:32:11",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:34:04",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:34:19",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:34:30",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District', 'Greater Hyderabad']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:34:47",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Greater Hyderabad']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:34:57",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Karimnagar District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:35:09",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:35:20",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:35:34",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Mahabubnagar District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:35:56",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:01",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Medak District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:15",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:20",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Nalgonda District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:30",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:31",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Nizamabad District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:45",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:36:49",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Sangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:37:02",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:37:09",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:37:40",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District', 'Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:37:54",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:40:02",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 12:40:12",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']; agencies=['TSRTC']"
+  },
+  {
+    "timestamp": "2026-06-07 13:01:01",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-07 13:01:03",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-07 13:01:19",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-07 13:02:40",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-07 13:02:56",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Khammam District']"
+  },
+  {
+    "timestamp": "2026-06-08 13:51:27",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-08 13:51:30",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-08 13:51:55",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-08 13:52:17",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-08 13:53:39",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Greater Hyderabad']"
+  },
+  {
+    "timestamp": "2026-06-08 13:54:13",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:06:04",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:07:24",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District', 'Greater Hyderabad']"
+  },
+  {
+    "timestamp": "2026-06-08 14:07:43",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Adilabad District', 'Greater Hyderabad', 'Karimnagar District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:08:52",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Rangareddy District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:10:28",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:15:04",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District', 'Nizamabad District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:17:14",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Medchal District']"
+  },
+  {
+    "timestamp": "2026-06-08 14:32:59",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=ai"
   }
 ]

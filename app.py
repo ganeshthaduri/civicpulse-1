@@ -18,6 +18,11 @@ import random
 warnings.filterwarnings("ignore")
 from dotenv import load_dotenv
 
+path = "TELANGANA_DISTRICTS.geojson"
+
+print("Current folder:", os.getcwd())
+print("Exists:", os.path.exists(path))
+
 
 
 # ══════════════════════════════════════════════════════
@@ -1536,208 +1541,213 @@ def show_main_app():
 
 
 # ══════════════════════════════════════════════════════
-    #  GEOSPATIAL (OFFLINE COMPACT POLYGON DISTRICT MAP ONLY)
+    #  GEOSPATIAL
     # ══════════════════════════════════════════════════════
     elif page == "geo":
         st.markdown("""
         <div class="hero">
           <div class="hero-eye">🗺️ Geospatial Intelligence</div>
-          <div class="hero-h">Telangana District Boundary Viewer</div>
-          <div class="hero-p">An isolated local polygon geographical display mapping Telangana's regional boundaries without internet requirements.</div>
+          <div class="hero-h">Telangana District Hotspot Mapper</div>
+          <div class="hero-p">Interactive district boundary viewer with live complaint data — all sidebar filters applied. Select Agency, District, Year or Complaint Type to highlight relevant districts on the map.</div>
         </div>""", unsafe_allow_html=True)
         fbanner()
 
-        # Simple District Filter
-        sb2 = st.multiselect("Filter View by District", sorted(df["Borough"].dropna().unique()), default=[], key="gb", placeholder="Showing all districts")
+        # ── KPI Cards (filter-aware, same as other pages) ──────
+        geo_total    = len(df)
+        geo_closed   = (df["Status"] == "Closed").sum()
+        geo_sla_ok   = (df["SLAStatus"] == "Within SLA").sum()
+        geo_avg_res  = df["ResolutionDays"].mean()
+        geo_avg_sent = df["SentimentScore"].mean()
+        geo_districts = df["Borough"].nunique()
+
+        gk1, gk2, gk3, gk4, gk5, gk6 = st.columns(6)
+        with gk1: kpi("Total Complaints", f"{geo_total:,}", "Filtered records", "#1565c0", "📋")
+        with gk2: kpi("Districts Active", f"{geo_districts}", "With complaints", "#00897b", "🗺️")
+        with gk3: kpi("Resolved Cases",  f"{geo_closed:,}", f"{geo_closed/geo_total*100:.1f}% resolved", "#00895a", "✅")
+        with gk4: kpi("SLA Compliance",  f"{geo_sla_ok/geo_total*100:.1f}%", f"{geo_sla_ok:,} within target", "#5e35b1", "🎯")
+        with gk5: kpi("Avg Resolution",  f"{geo_avg_res:.1f}d", "Mean days to close", "#d97706", "⏱️")
+        with gk6: kpi("Sentiment Index", f"{geo_avg_sent:+.2f}", "−1 negative · +1 positive",
+                      "#00895a" if geo_avg_sent > 0 else "#e53935", "💬")
 
         st.markdown("<br>", unsafe_allow_html=True)
-        sec("Interactive District Map", "Hover over regions or select filters above to change contrast")
-        st.markdown('<div class="map-card" style="padding: 10px; background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">', unsafe_allow_html=True)
 
-        # 1. Self-contained polygon framework of Telangana districts (Bounding Envelopes)
-        # This completely replaces the need for live external network GeoJSON links.
-        local_geojson = {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Hyderabad"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [78.40, 17.34], [78.53, 17.34], [78.53, 17.44], [78.40, 17.44], [78.40, 17.34]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Medchal-Malkajgiri"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [78.35, 17.44], [78.65, 17.44], [78.65, 17.65], [78.35, 17.65], [78.35, 17.44]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Rangareddy"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [78.15, 17.05], [78.60, 17.05], [78.60, 17.34], [78.15, 17.34], [78.15, 17.05]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Sangareddy"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [77.70, 17.40], [78.20, 17.40], [78.20, 17.90], [77.70, 17.90], [77.70, 17.40]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Nizamabad"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [77.90, 18.40], [78.40, 18.40], [78.40, 18.90], [77.90, 18.90], [77.90, 18.40]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Warangal"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [79.40, 17.80], [79.80, 17.80], [79.80, 18.20], [79.40, 18.20], [79.40, 17.80]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Khammam"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [80.00, 16.90], [80.60, 16.90], [80.60, 17.60], [80.00, 17.60], [80.00, 16.90]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Karimnagar"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [78.90, 18.20], [79.40, 18.20], [79.40, 18.70], [78.90, 18.70], [78.90, 18.20]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Mahabubnagar"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [77.60, 16.40], [78.30, 16.40], [78.30, 17.00], [77.60, 17.00], [77.60, 16.40]
-                        ]]
-                    }
-                },
-                {
-                    "type": "Feature",
-                    "properties": {"district": "Nalgonda"},
-                    "geometry": {
-                        "type": "Polygon",
-                        "coordinates": [[
-                            [79.00, 16.60], [79.60, 16.60], [79.60, 17.30], [79.00, 17.30], [79.00, 16.60]
-                        ]]
-                    }
-                }
-            ]
-        }
+        # ── Load GeoJSON ────────────────────────────────────────
+        with open("TELANGANA_DISTRICTS.geojson", "r", encoding="utf-8") as f:
+            local_geojson = json.load(f)
 
-        # 2. Add missing boroughs from your dataset as fallback box regions dynamically
-        loaded_districts = {f["properties"]["district"] for f in local_geojson["features"]}
-        all_dataset_boroughs = set(df["Borough"].dropna().unique())
-        missing_districts = all_dataset_boroughs - loaded_districts
+        # ── Build a normalised name → canonical Borough name map ─
+        # Normalise: lowercase, strip spaces/hyphens/dots AND remove trailing "district"
+        # so "Rangareddy District" == "rangareddy" == "Ranga Reddy"
+        def _norm(s):
+            s = s.lower().replace(" ", "").replace("-", "").replace(".", "")
+            # Strip trailing "district" suffix (common in dataset Borough names)
+            if s.endswith("district"):
+                s = s[: -len("district")]
+            return s.strip()
 
-        # Standard baseline coordinates for any other districts in the configuration
-        base_lat, base_lon = 17.5, 78.5
-        for idx, dist in enumerate(sorted(missing_districts)):
-            shift_x = (idx % 4) * 0.4
-            shift_y = (idx // 4) * 0.4
-            local_geojson["features"].append({
-                "type": "Feature",
-                "properties": {"district": dist},
-                "geometry": {
-                    "type": "Polygon",
-                    "coordinates": [[
-                        [base_lon + shift_x, base_lat + shift_y],
-                        [base_lon + shift_x + 0.35, base_lat + shift_y],
-                        [base_lon + shift_x + 0.35, base_lat + shift_y + 0.35],
-                        [base_lon + shift_x, base_lat + shift_y + 0.35],
-                        [base_lon + shift_x, base_lat + shift_y]
-                    ]]
-                }
-            })
+        # All Borough names that exist in the full (unfiltered) dataset
+        all_boroughs = fact["Borough"].dropna().unique()
+        # Dict: normalised → original Borough name
+        norm_to_borough = {_norm(b): b for b in all_boroughs}
 
-        # 3. Base Map generation
-        m = folium.Map(location=[17.55, 78.95], zoom_start=7.5, tiles="cartodbpositron")
-        
-        # Style calculation function
+        # For each dtname in GeoJSON, find the best-matching Borough name
+        geojson_dtnames = [f["properties"]["dtname"] for f in local_geojson["features"]]
+        # dtname → matching Borough name (or None if no match found)
+        dtname_to_borough = {}
+        unmatched = []
+        for dtname in geojson_dtnames:
+            key = _norm(dtname)
+            if key in norm_to_borough:
+                dtname_to_borough[dtname] = norm_to_borough[key]
+            else:
+                # Fuzzy fallback: check if dtname normalised is a substring of any borough or vice-versa
+                matched = None
+                for nb, b in norm_to_borough.items():
+                    if key in nb or nb in key:
+                        matched = b
+                        break
+                dtname_to_borough[dtname] = matched  # None if truly unmatched
+                if matched is None:
+                    unmatched.append(dtname)
+
+        # ── Derive active districts from filtered df ────────────
+        # This set uses Borough names → we compare via dtname_to_borough mapping
+        active_boroughs = set(df["Borough"].dropna().unique())
+
+        # complaint count keyed by Borough name
+        borough_counts = df.groupby("Borough").size().to_dict()
+        max_count = max(borough_counts.values()) if borough_counts else 1
+
+        # ── Helper: look up complaint count for a GeoJSON feature ─
+        def get_count_for_dtname(dtname):
+            borough = dtname_to_borough.get(dtname)
+            if borough is None:
+                return 0
+            return borough_counts.get(borough, 0)
+
+        def is_active_dtname(dtname):
+            borough = dtname_to_borough.get(dtname)
+            if borough is None:
+                return False
+            return borough in active_boroughs
+
+        # ── Color scale: more complaints → deeper blue ──────────
+        def complaint_color(count):
+            if count == 0:
+                return "#94a3b8"
+            ratio = count / max_count
+            if ratio > 0.75:
+                return "#0a2540"
+            elif ratio > 0.5:
+                return "#1565c0"
+            elif ratio > 0.25:
+                return "#1e88e5"
+            else:
+                return "#64b5f6"
+
+        # ── Enrich GeoJSON features with complaint_count property ─
+        # This allows the tooltip to display counts without extra markers
+        for feat in local_geojson["features"]:
+            dtname = feat["properties"]["dtname"]
+            cnt = get_count_for_dtname(dtname)
+            feat["properties"]["complaint_count"] = f"{cnt:,}" if cnt > 0 else "No data"
+            feat["properties"]["is_active"] = "Yes" if is_active_dtname(dtname) else "No"
+
+        # ── Style function using the mapping ────────────────────
         def style_map(feature):
-            district_name = feature['properties']['district']
-            if sb2 and district_name not in sb2:
+            dtname = feature["properties"]["dtname"]
+            active = is_active_dtname(dtname)
+            count  = get_count_for_dtname(dtname)
+
+            if filters_active and not active:
+                # Filters applied but this district has no matching data → grey out
                 return {
-                    "fillColor": "#94a3b8",
-                    "color": "#cbd5e1",
-                    "weight": 1.0,
-                    "fillOpacity": 0.02
+                    "fillColor":   "#e2e8f0",
+                    "color":       "#cbd5e1",
+                    "weight":      0.6,
+                    "fillOpacity": 0.10,
                 }
             return {
-                "fillColor": "#1565c0",
-                "color": "#1e3a8a",
-                "weight": 1.5,
-                "fillOpacity": 0.15
+                "fillColor":   complaint_color(count),
+                "color":       "#1e3a8a",
+                "weight":      1.8,
+                "fillOpacity": 0.55 if active else 0.20,
             }
 
-        # Inject the polygon configuration onto map layers
+        # ── Build map ───────────────────────────────────────────
+        sec("Interactive District Map", "Districts highlighted based on all active sidebar filters — hover for details")
+        st.markdown('<div class="map-card" style="padding: 10px; background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">', unsafe_allow_html=True)
+
+        m = folium.Map(location=[17.55, 78.95], zoom_start=7.5, tiles="cartodbpositron")
+
         folium.GeoJson(
             local_geojson,
-            name="Telangana Interactive Districts",
+            name="Telangana Districts",
             style_function=style_map,
             highlight_function=lambda x: {
-                "fillColor": "#f59e0b",
-                "fillOpacity": 0.40,
-                "weight": 2.5
+                "fillColor":   "#f59e0b",
+                "fillOpacity": 0.70,
+                "weight":      2.5,
+                "color":       "#b45309",
             },
             tooltip=folium.GeoJsonTooltip(
-                fields=["district"], 
-                aliases=["District Name: "], 
+                fields=["dtname", "complaint_count"],
+                aliases=["District:", "Complaints:"],
                 localize=True,
-                style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; padding: 8px; border-radius: 4px;"
-            )
+                style=(
+                    "font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; "
+                    "padding: 10px 14px; border-radius: 8px; "
+                    "background: #0a2540; color: #e0f2fe; border: 1px solid #1e3a8a;"
+                ),
+            ),
         ).add_to(m)
 
-        # 4. Render component clean display layout wrapper
-        st_folium(m, width="100%", height=550, returned_objects=[])
+        # ── Circle markers at district centroids (active only) ──
+        for feat in local_geojson["features"]:
+            dtname = feat["properties"]["dtname"]
+            if not is_active_dtname(dtname):
+                continue
+            count = get_count_for_dtname(dtname)
+            borough = dtname_to_borough.get(dtname, dtname)
+
+            # Compute centroid by averaging all polygon ring coordinates
+            geom = feat["geometry"]
+            if geom["type"] == "Polygon":
+                ring = geom["coordinates"][0]
+            else:  # MultiPolygon — use the first (largest by point count) ring
+                ring = max(geom["coordinates"], key=lambda p: len(p[0]))[0]
+            lat = sum(pt[1] for pt in ring) / len(ring)
+            lon = sum(pt[0] for pt in ring) / len(ring)
+
+            radius = max(6, min(22, int(count / max_count * 24)))
+            folium.CircleMarker(
+                location=[lat, lon],
+                radius=radius,
+                color="#ffffff",
+                weight=1.5,
+                fill=True,
+                fill_color="#f59e0b",
+                fill_opacity=0.85,
+                tooltip=(
+                    f"<b style='color:#0a2540'>{borough}</b><br>"
+                    f"<span style='color:#1565c0'>{count:,} complaints</span>"
+                ),
+            ).add_to(m)
+
+        st_folium(m, width="100%", height=560, returned_objects=[])
         st.markdown('</div>', unsafe_allow_html=True)
 
         # ── Extra Geospatial Visuals ──────────────────────────
         gdf = df.copy()
-        # Ensure required columns exist with safe fallbacks
         if "Neighborhood" not in gdf.columns:
             gdf["Neighborhood"] = gdf.get("ZipCode", "Unknown").astype(str)
         if "SeverityScore" not in gdf.columns:
             gdf["SeverityScore"] = np.random.uniform(1, 5, len(gdf))
         if "SentimentScore" not in gdf.columns:
             gdf["SentimentScore"] = np.random.uniform(-1, 1, len(gdf))
+
+        top_n = gdf["Neighborhood"].value_counts().head(10).index
+        top_c = gdf["ComplaintType"].value_counts().head(8).index
 
         st.markdown("<div class='div'></div>", unsafe_allow_html=True)
         m1, m2 = st.columns(2)
@@ -1751,8 +1761,6 @@ def show_main_app():
             st.plotly_chart(fig_nb, use_container_width=True)
         with m2:
             sec("Top Complaint Types by Neighbourhood")
-            top_n = gdf["Neighborhood"].value_counts().head(10).index
-            top_c = gdf["ComplaintType"].value_counts().head(8).index
             ht = gdf[gdf["Neighborhood"].isin(top_n) & gdf["ComplaintType"].isin(top_c)]
             ht_agg = ht.groupby(["Neighborhood", "ComplaintType"]).size().reset_index(name="Count")
             fig_ht = px.density_heatmap(ht_agg, x="Neighborhood", y="ComplaintType", z="Count",
