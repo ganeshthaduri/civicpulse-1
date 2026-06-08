@@ -3148,5 +3148,75 @@
     "role": "user",
     "action": "PAGE_VIEW",
     "detail": "page=ai"
+  },
+  {
+    "timestamp": "2026-06-08 15:46:24",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-08 15:46:26",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-08 15:46:37",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=command"
+  },
+  {
+    "timestamp": "2026-06-08 15:46:47",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-08 15:47:11",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Medak District']"
+  },
+  {
+    "timestamp": "2026-06-08 17:04:42",
+    "username": "user3",
+    "role": "user",
+    "action": "LOGIN",
+    "detail": "Successful login from role=user"
+  },
+  {
+    "timestamp": "2026-06-08 17:04:43",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=home"
+  },
+  {
+    "timestamp": "2026-06-08 17:04:51",
+    "username": "user3",
+    "role": "user",
+    "action": "PAGE_VIEW",
+    "detail": "page=geo"
+  },
+  {
+    "timestamp": "2026-06-08 17:06:25",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Greater Hyderabad']"
+  },
+  {
+    "timestamp": "2026-06-08 17:07:08",
+    "username": "user3",
+    "role": "user",
+    "action": "FILTER_APPLIED",
+    "detail": "districts=['Warangal District']"
   }
 ]
